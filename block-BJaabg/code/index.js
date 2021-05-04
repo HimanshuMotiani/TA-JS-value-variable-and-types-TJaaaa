@@ -14,5 +14,21 @@ const ACCESSORY_PRICE = 9.99;
 var bank_balance = 303.91;
 var amount = 0;
 // your code goes here
+while(amount<bank_balance){
+    amount = amount + PHONE_PRICE;
+    if(amount < SPENDING_THRESHOLD){
+        amount = amount + ACCESSORY_PRICE
+    }
+}
+let rate = amount * TAX_RATE;
+amount = amount + rate;
+if(amount > bank_balance){
+    alert('Can not afford');
+}
+else{
+    alert(`Can afford`);
+}
+
+
 
 // ⛑ Answer of the above will `$334.76`.
