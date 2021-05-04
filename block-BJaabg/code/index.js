@@ -26,7 +26,7 @@ if(amount > bank_balance){
     alert('Can not afford');
 }
 else{
-    alert(`Can afford`);
+    alert(`Can afford`)
 }
 
 
