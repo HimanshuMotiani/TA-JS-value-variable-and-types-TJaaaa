@@ -34,16 +34,20 @@ for (let j = 9; j >= 1; j=j-2){
    }
 // 5. Concat all the numbers from 5 to 0 (both inclusive) in descending order using a while loop. (543210)
 let value = "";
-for (let j = 5; j >= 0; j--) {
+let j=5
+while(j>=0){
     value = value + j;
+    j--;
 }
 console.log(value)
 // 6. Concat all the even numbers from 10 to 0 (both inclusive) in descending order using a while loop. (1086420)
-
-for (let j = 10; j >= 0; j=j-2) {
-    value = value + j;
-}
-console.log(value)
+let k = 10;
+let val = "";
+while (k>=0) {
+    val = val + k;
+k=k-2
+ }
+ console.log(val)
 // Comparisoin
 
 /* 7. Take two value using prompt and store them in variables `num1` and `num2`. Check whether they are equal or not.
@@ -58,9 +62,9 @@ Example:
 "hello", -21; // false
 
 */
-let num1 = prompt("Enter the first number");
-let num2 = prompt("Enter the second number");
-if(num1 == "null" || num1 == "true" || num1 == "undefined" || num2 == "null" || num2 == "true" || num2 == "undefined")
+let num1 = +prompt("Enter the first number");
+let num2 = +prompt("Enter the second number");
+if(isNaN(num1) || isNaN(num2))
 {
     alert(`Enter a valid number`);
 }
